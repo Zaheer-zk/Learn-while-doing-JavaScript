@@ -103,9 +103,9 @@
 
 // console.log(positiveNumbers);
 // Array Reduce ------------------
-const groceryList = [29, 12, 45, 100, 150];
+// const groceryList = [29, 12, 45, 100, 150];
 
-const totalPrice = groceryList.reduce((sum, number) => sum + number);
+// const totalPrice = groceryList.reduce((sum, number) => sum + number);
 // number will be the each index number
 // sum will be accumulator
 
