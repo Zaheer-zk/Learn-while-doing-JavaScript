@@ -244,8 +244,10 @@ const totalPrice = groceryList.reduce((sum, number) => sum + number);
 
 // // DEEP CLONING - TWO LEVELS DEEP
 // const users = [
-//   { name: 'John', age: 25 },
-//   { name: 'Victor', age: 25 },
-//   { name: 'Adrian', age: 25 },
+//   { name: 'John', age: 21 },
+//   { name: 'Khan', age: 21 },
+//   { name: 'Zaheer', age: 21 },
 // ];
 // const newUsers = JSON.parse(JSON.stringify(users));
+
+// console.log(newUsers);
