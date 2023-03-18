@@ -165,10 +165,96 @@
 // // Note : In object both key and value is a string but in Map DataStructure we can use any data type in it.
 
 // Built - in - methods --------------
+// const dog = {
+//   name: 'puppy',
+//   age: 2,
+//   bark: () => {
+//     console.log('Woof Woof!');
+//   },
+//   listAllProperties: function () {
+//     // console.log(name, age); // here we will get not defined
+//     console.log(this.name, this.age);
+//   },
+// };
 
-// -----------------------
-//  Cheat-Sheet ------------
-// -----------------------
+// dog.bark(); // Woof Woof!
+// dog.listAllProperties(); // puppy 2
+
+// // # Object Methods
+// // -> Object.keys() creates an array which contains all the keys of the object
+
+// const employees = {
+//   boss: 'Name1',
+//   secretary: 'Name2',
+//   sales: 'Name3',
+//   accountant: 'Name4',
+// };
+
+// const positions = Object.keys(employees);
+
+// console.log(positions); // (4) ['boss', 'secretary', 'sales', 'accountant']
+
+// // -> Object.values() creates an array which contains all the values of the object
+// const session = {
+//   id: 1,
+//   time: 'day-mon-year',
+//   device: 'mobile',
+//   browser: 'Chrome',
+// };
+
+// const sessionInfo = Object.values(session);
+// console.log(sessionInfo); // (4) [1, 'day-mon-year', 'mobile', 'Chrome']
+
+// // -> Object.entries() creates a nested array of the key/values pairs of a object
+
+// const operatingSystem = {
+//   name: 'Ubuntu',
+//   version: '18.04',
+//   license: 'Open Source',
+// };
+
+// const entries = Object.entries(operatingSystem);
+
+// console.log(entries);
+
+// entries.forEach((entry) => {
+//   key = entry[0];
+//   value = entry[1];
+
+//   console.log(`${key}: ${value}`);
+// });
+
+// // -> Object.freeze() prevents modification to
+// // properties and values of an object prevents properties from being added or remove from an object.
+// const user = {
+//   username: 'Zaheer',
+//   password: '123123',
+// };
+
+// const admin = Object.freeze(user);
+
+// admin.username = 'tryToChangeUsername';
+// admin.password = 'tryToChangePassword';
+
+// console.log(admin); // But there will be not change {username: 'Zaheer', password: '123123'}
+
+// -> Object.seal() prevents properties from being added an object but we can modification of existing properties.
+// const user = {
+//   username: 'Zaheer',
+//   password: '123123',
+// };
+
+// const newUser = Object.seal(user);
+
+// newUser.username = 'Zaheer Khan';
+// console.log(newUser); // {username: 'Zaheer Khan', password: '123123'}
+
+// newUser.isAdmin = true;
+// console.log(newUser); // Will not add to the object.
+
+//  ##############################################
+// ###############  Cheat-Sheet #################
+// ##############################################
 // STRING ------------
 // string[index] - get a certain character of a string
 // string.length - return the number of characters in a string
