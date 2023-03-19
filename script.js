@@ -252,6 +252,41 @@
 // newUser.isAdmin = true;
 // console.log(newUser); // Will not add to the object.
 
+/// -------------------------------------
+// Value - vs - Reference
+/// -------------------------------------
+
+//When a variable assign to a variable it copy its value.
+//but in Object it copies its reference that's how they have same address/ Location at the memory.
+
+// # Shallow copy ---------------------
+// -> Cloning arrays - 1st way: Spread Operator
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const copiedNumbers = numbers; // copies the reference
+// const newArray = [...numbers]; // copies the value. Called as shallow clone
+
+// console.log(newArray); //(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// console.log(copiedNumbers === numbers); // true
+// console.log(copiedNumbers === newArray); // false
+
+// 2nd way: Array.slice().
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const copiedNumbers = numbers; // copies the reference
+// const newArray = numbers.slice();
+
+// Cloning Objects
+// 1st way: Spread Operator
+// 2nd way: Object.assign(NEW_OBJECT, CLONING_OBJECT)
+
+// # Deep Clone.
+// 1st way : using spread operator
+// 2nd way: using JSON.parse(JSON.stringify(object)); // Stringify will remove all reference
+
+/// -------------------------------------
+// DOM
+/// -------------------------------------
+
 //  ##############################################
 // ###############  Cheat-Sheet #################
 // ##############################################
@@ -261,8 +296,8 @@
 // string.split(' ') - returns an array of words of a string
 // string.split('') - returns an array of characters of a string
 // string.toLowerCase() - returns a lowercased string
-// string.toUpperCase() - returns an uppercased string
-// string.includes('subtring') - checks whether a substring exists inside of a string [check the character case]
+// string.toUpperCase() - returns an uppercase string
+// string.includes('substring') - checks whether a substring exists inside of a string [check the character case]
 
 // ARRAY ------------
 // array[index] - returns a certain value from an array
