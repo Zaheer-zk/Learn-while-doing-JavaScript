@@ -119,3 +119,16 @@ is then used in the program.
 // };
 
 // Async await
+// -> async function return promises!!!
+const fetchNumber = async () => {
+  return 25;
+};
+
+console.log(fetchNumber()); // it will return a promises
+
+const number = async () => {
+  const data = await fetchNumber();
+  console.log(data);
+};
+
+number();
