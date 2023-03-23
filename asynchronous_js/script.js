@@ -38,55 +38,84 @@ is then used in the program.
 // });
 
 // Callback hell🔥 -
-const fetchUser = (userName, callback) => {
-  setTimeout(() => {
-    callback({ userName });
-  }, 2000);
-};
+// const fetchUser = (userName, callback) => {
+//   setTimeout(() => {
+//     callback({ userName });
+//   }, 2000);
+// };
 
-const fetchUserPhoto = (userName, callback) => {
-  setTimeout(() => {
-    callback(['Photo 1', 'Photo 2']);
-  }, 2000);
-};
+// const fetchUserPhoto = (userName, callback) => {
+//   setTimeout(() => {
+//     callback(['Photo 1', 'Photo 2']);
+//   }, 2000);
+// };
 
-const fetchPhotoDetails = (photo, callback) => {
-  setTimeout(() => {
-    callback('Details..');
-  }, 2000);
-};
+// const fetchPhotoDetails = (photo, callback) => {
+//   setTimeout(() => {
+//     callback('Details..');
+//   }, 2000);
+// };
 
-fetchUser('Zaheer', (user) => {
-  console.log(user.userName);
+// fetchUser('Zaheer', (user) => {
+//   console.log(user.userName);
 
-  fetchUserPhoto(user.userName, (photo) => {
-    console.log(`Your photo ${photo}`);
-    fetchPhotoDetails(photo[0], (photoDetails) => {
-      console.log(`Your photo details ${photoDetails}`);
-      fetchUserPhoto(user.userName, (photo) => {
-        console.log(`Your photo ${photo}`);
-        fetchPhotoDetails(photo[0], (photoDetails) => {
-          console.log(`Your photo details ${photoDetails}`);
-          fetchUserPhoto(user.userName, (photo) => {
-            console.log(`Your photo ${photo}`);
-            fetchPhotoDetails(photo[0], (photoDetails) => {
-              console.log(`Your photo details ${photoDetails}`);
-              fetchUserPhoto(user.userName, (photo) => {
-                console.log(`Your photo ${photo}`);
-                fetchPhotoDetails(photo[0], (photoDetails) => {
-                  console.log(`Your photo details ${photoDetails}`);
-                  fetchUserPhoto(user.userName, (photo) => {
-                    console.log(`Your photo ${photo}`);
-                    fetchPhotoDetails(photo[0], (photoDetails) => {
-                      console.log(`Your photo details ${photoDetails}`);
-                    });
-                  });
-                });
-              });
-            });
-          });
-        });
-      });
-    });
-  });
-});
+//   fetchUserPhoto(user.userName, (photo) => {
+//     console.log(`Your photo ${photo}`);
+//     fetchPhotoDetails(photo[0], (photoDetails) => {
+//       console.log(`Your photo details ${photoDetails}`);
+//       fetchUserPhoto(user.userName, (photo) => {
+//         console.log(`Your photo ${photo}`);
+//         fetchPhotoDetails(photo[0], (photoDetails) => {
+//           console.log(`Your photo details ${photoDetails}`);
+//           fetchUserPhoto(user.userName, (photo) => {
+//             console.log(`Your photo ${photo}`);
+//             fetchPhotoDetails(photo[0], (photoDetails) => {
+//               console.log(`Your photo details ${photoDetails}`);
+//               fetchUserPhoto(user.userName, (photo) => {
+//                 console.log(`Your photo ${photo}`);
+//                 fetchPhotoDetails(photo[0], (photoDetails) => {
+//                   console.log(`Your photo details ${photoDetails}`);
+//                   fetchUserPhoto(user.userName, (photo) => {
+//                     console.log(`Your photo ${photo}`);
+//                     fetchPhotoDetails(photo[0], (photoDetails) => {
+//                       console.log(`Your photo details ${photoDetails}`);
+//                     });
+//                   });
+//                 });
+//               });
+//             });
+//           });
+//         });
+//       });
+//     });
+//   });
+// });
+
+// # Promises -------------------
+// const fetchUser = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log(`Now we have user`);
+//     // resolve({ userName: 'Zaheer' });
+//     reject('User not found');
+//   }, 2000);
+// });
+
+// fetchUser.then((user) => {
+//   console.log(`Hello ${user.userName}`);
+// });
+
+// fetchUser.catch((error) => {
+//   console.error(error);
+// });
+
+// const fetchUser = (userName) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(`Now we have user`);
+//       resolve({ userName });
+//       // reject('User not found');
+//     }, 2000);
+//   });
+// };
+
+// Async await
