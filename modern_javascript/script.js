@@ -11,7 +11,7 @@
 // console.log(`Data listed here ${data}`); // Data listed here 1,2,3,4,5,6
 // console.log(`text listed here ${text}`); // Data listed here A, B, C, D, E, F
 
-// // # Rest and spread operator
+// # Rest and spread operator
 // const add = (...args) => {
 //   return args.reduce((acc, val) => {
 //     return acc + val;
@@ -28,7 +28,7 @@
 
 // console.log(newNumbers);
 
-// // # Object Destructuring
+// # Object Destructuring
 // const person = {
 //   name: 'John',
 //   age: 21,
@@ -61,21 +61,22 @@
 // console.log(person.animals.cat.name);
 // console.log(person.animals.cat.age);
 
-// /*
-// John
-// 21
-// {color: 'Black', wheel: 4}
-// Black
-// 4
-// {dog: {…}, cat: {…}}
-// {name: 'Dog', age: 3}
-// Dog
-// 3
-// Cat
-// 3
-// */
+// Upper console's outputs
+/*
+John
+21
+{color: 'Black', wheel: 4}
+Black
+4
+{dog: {…}, cat: {…}}
+{name: 'Dog', age: 3}
+Dog
+3
+Cat
+3
+*/
 
-// // Using destruction -> use key for destructure
+// Using destruction -> use key for destructure, "name should be same"
 
 // const {
 //   name,
@@ -95,8 +96,8 @@
 // Array destructuring
 // const introduction = ['Hello', 'I', 'm', 'Zaheer'];
 
-// // const [mess, , , name] = introduction;
+// const [mess, , , name] = introduction;
 // const [...mess] = introduction;
 
-// // console.log(mess, name);
+// console.log(mess, name);
 // console.log(mess);

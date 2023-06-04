@@ -8,9 +8,9 @@
 // const arr = []; // literal array
 // const arr2 = new Array();
 
-// // NOTE : In javaScript everything is object
+// NOTE : In javaScript everything is object
 
-// // the this keyword -> use to reference the current object
+// the this keyword -> use to reference the current object
 // console.log(this);
 // /*
 // [object Window]

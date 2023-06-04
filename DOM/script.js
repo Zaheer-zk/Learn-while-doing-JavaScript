@@ -1,4 +1,4 @@
-// // # Selecting Element
+// # Selecting Element
 // const el = document.getElementById('input__element');
 // console.log(el); // h1#input__element.input__text
 
@@ -17,7 +17,7 @@
 // const el6 = document.querySelector('.input__text');
 // console.log(el6); // <h1 id="input__element" class="input__text">Test text1</h1>
 
-// // # Elements properties and methods.
+// # Elements properties and methods.
 // const el7 = document.querySelector('#input__element');
 // console.log(el7.classList); // DOMTokenList ['input__text', value: 'input__text']
 // console.log(el7.className); // input__text
@@ -34,7 +34,7 @@
 
 // button.removeAttribute('addAttributeHere'); // It will the specified attribute
 
-// // # Creating, Traversing and Removing Nodes
+// # Creating, Traversing and Removing Nodes
 // const h1El = document.createElement('h1');
 // h1El.textContent = 'This is a node';
 // button.appendChild(h1El); // Element.appendChild(element);

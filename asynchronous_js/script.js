@@ -95,7 +95,7 @@ is then used in the program.
 // const fetchUser = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     console.log(`Now we have user`);
-//     // resolve({ userName: 'Zaheer' });
+    // resolve({ userName: 'Zaheer' });
 //     reject('User not found');
 //   }, 2000);
 // });
@@ -113,7 +113,7 @@ is then used in the program.
 //     setTimeout(() => {
 //       console.log(`Now we have user`);
 //       resolve({ userName });
-//       // reject('User not found');
+      // reject('User not found');
 //     }, 2000);
 //   });
 // };
