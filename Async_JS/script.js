@@ -1,5 +1,7 @@
 'use strict';
 
+//* API has changed, now we have https://countries-api-836d.onrender.com/countries/
+
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
