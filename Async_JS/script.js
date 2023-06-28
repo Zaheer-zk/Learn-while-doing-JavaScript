@@ -274,15 +274,30 @@ whereAmI(-33.933, 18.474);
 ///////////////////////////////////////
 // The Event Loop in Practice
 console.log('Test start');
-setTimeout(() => console.log('0 sec timer'), 0);
+setTimeout(() => console.log('0 sec timer 1st'), 0);
 Promise.resolve('Resolved promise 1').then(res => console.log(res));
 
 Promise.resolve('Resolved promise 2').then(res => {
-  for (let i = 0; i < 1000000000; i++) {}
+setTimeout(() => console.log('0 sec timer 2nd'), 0);
+  for (let i = 0; i < 1000000000; i++) {
+
+}
+setTimeout(() => console.log('0 sec timer 3rd'), 0);
   console.log(res);
 });
-
+setTimeout(() => console.log('0 sec timer 4th'), 0);
 console.log('Test end');
+
+Console Output
+Test start
+VM301:14 Test end
+VM301:3 Resolved promise 1
+VM301:11 Resolved promise 2
+undefined
+VM301:2 0 sec timer 1st
+VM301:13 0 sec timer 4th
+VM301:6 0 sec timer 2nd
+VM301:10 0 sec timer 3rd
 
 
 ///////////////////////////////////////
