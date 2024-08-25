@@ -76,11 +76,11 @@ const f = createFunction();
 console.log(f(3, 4)); // 7
 ```
 
-In this example, the function is returned before it is initialized. Although it is valid syntax, it is sometimes considered bad practice as it can reduce readability.
+In this example, the function f is returned before it is initialized. Although it is valid syntax, it is sometimes considered bad practice as it can reduce readability.
 
 ## Closures
 
-An important topic in JavaScript is the concept of closures. When a function is created, it has access to a reference to all the variables declared around it, also known as it's lexical environment. The combination of the function and its enviroment is called a closure. This is a powerful and often used feature of the language.
+An important topic in JavaScript is the concept of closures. When a function is created, it has access to a reference to all the variables declared around it, also known as it's lexical environment. The combination of the function and its environment is called a closure. This is a powerful and often used feature of the language.
 
 ```javascript
 function createAdder(a) {
